@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>A*</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="astar.js"></script>
+		<style>
+			body { margin:0;padding:0;border:0;text-align: center;background-color: #004455;color:white;}
+			#title { margin-top:50px;font-size:40px;font-family: Arial, Helvetica, sans-serif; }
+			p { margin:auto;margin-top: 20px; font-size:16px;font-family: Arial, Helvetica, sans-serif;width:300px;height:30px;overflow-y:auto;}
+		</style>
+	</head>
+	<body>
+		<p id="title" style="height:100px;"> A* Algorithm</p>
+		<p id="info">Click the start cell</p>
+	</body>
+	<script type="text/javascript">
+		const MAXROW = 30;
+		const MAXCOL = 30;
+		const MSEC = 30;
+		var selected=0;
+		var labirinto = createLab(MAXROW,MAXCOL); 
+		var initState;
+		var goalState;
+		drawLab(labirinto);
+	</script>
+</html>
